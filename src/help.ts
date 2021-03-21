@@ -13,6 +13,6 @@ module.exports = class MyHelpClass extends Help {
   showCommandHelp(command: Command) {
     // eslint-disable-next-line no-console
     console.log(cliHeader)
-    super.showHelp(command)
+    super.showCommandHelp(command)
   }
 }
