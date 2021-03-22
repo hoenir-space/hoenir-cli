@@ -44,7 +44,11 @@
     "bin": "hoenir",
     "plugins": [
       "@oclif/plugin-help"
-    ]
+    ],
+    "topics": {
+      "create": { "description": "Phase 1: Build things!" },
+      "inspect": { "description": "Let's have a closer look!" }
+    }
   },
   "repository": "hoenir-space/hoenir-cli",
   "scripts": {

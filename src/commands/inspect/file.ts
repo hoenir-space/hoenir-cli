@@ -1,10 +1,15 @@
+/**
+ * A command to inspect hoenir files.
+ * @author Golos <golos@hoenir.space>
+ */
+
 import {Command, flags} from '@oclif/command'
 
-export default class Inspect extends Command {
-  static description = 'inspect file contents';
+export default class File extends Command {
+  static description = 'Inspect a file\'s contents';
 
   static examples = [
-    `$ hoenir inspect test.hdo
+    `$ hoenir inspect:file test.hdo
     `,
   ]
 
@@ -21,7 +26,7 @@ export default class Inspect extends Command {
   ]
 
   async run() {
-    const {args} = this.parse(Inspect)
+    const {args} = this.parse(File)
 
     if (typeof args.file === 'undefined') {
       this.log('No file path provided!')
