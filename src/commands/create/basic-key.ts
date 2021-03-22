@@ -3,7 +3,7 @@
  * @author Golos <golos@hoenir.space>
  */
 
-import createBasicKeyAction from '@hoenir/core/source/action/create/BasicKey'
+import createBasicKeyAction from '@hoenir/core/lib/action/create/BasicKey'
 
 import {Command, flags} from '@oclif/command'
 

@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import {InterfaceStrings as iStrings} from '@hoenir/core/source/resource/text/cli/InterfaceStrings'
+import {InterfaceStrings as iStrings} from '@hoenir/core/lib/resource/text/cli/InterfaceStrings'
 
 const hoenirHeader =
   '\n' + iStrings.cLine +

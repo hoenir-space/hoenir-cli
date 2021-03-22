@@ -3,7 +3,7 @@
  * @author Golos <golos@hoenir.space>
  */
 
-import createIDAction from '@hoenir/core/source/action/create/ID'
+import createIDAction from '@hoenir/core/lib/action/create/ID'
 
 import {Command, flags} from '@oclif/command'
 
