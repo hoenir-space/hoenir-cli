@@ -24,8 +24,7 @@
     "typescript": "^3.9.9"
   },
   "engines": {
-    "node": ">=10",
-    "npm": ">=7.6.2"
+    "node": ">=10"
   },
   "files": [
     "/bin",
