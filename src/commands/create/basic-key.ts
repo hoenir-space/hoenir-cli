@@ -3,12 +3,12 @@
  * @author Golos <golos@hoenir.space>
  */
 
-import createIDAction from '@hoenir/core/source/action/create/ID'
+import createBasicKeyAction from '@hoenir/core/source/action/create/BasicKey'
 
 import {Command, flags} from '@oclif/command'
 
-export default class ID extends Command {
-  static description = 'Returns a freshly generated id.';
+export default class BasicKey extends Command {
+  static description = 'Puts a new key pair into the current directory.';
 
   static examples = [
     `$ hoenir create:id
@@ -20,7 +20,6 @@ export default class ID extends Command {
   }
 
   async run() {
-    const id = createIDAction.do()
-    this.log(id)
+    createBasicKeyAction.do('')
   }
 }

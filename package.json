@@ -1,12 +1,14 @@
 {
-  "name": "hoenir-cli",
+  "name": "@hoenir/cli",
   "description": "The command line interface for the Hœnir framework.",
   "version": "0.0.1",
   "author": "Golos",
   "bin": {
-    "hoenir": "./bin/run"
+    "hoenir": "bin/run"
   },
-  "bugs": "https://github.com/hoenir-space/hoenir-cli/issues",
+  "bugs": {
+    "url": "https://github.com/hoenir-space/hoenir-cli/issues"
+  },
   "devDependencies": {
     "@oclif/dev-cli": "^1.26.0",
     "@oclif/test": "^1.2.8",
@@ -46,11 +48,18 @@
       "@oclif/plugin-help"
     ],
     "topics": {
-      "create": { "description": "Phase 1: Build things!" },
-      "inspect": { "description": "Let's have a closer look!" }
+      "create": {
+        "description": "Phase 1: Build things!"
+      },
+      "inspect": {
+        "description": "Let's have a closer look!"
+      }
     }
   },
-  "repository": "hoenir-space/hoenir-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoenir-space/hoenir-cli.git"
+  },
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
@@ -60,10 +69,13 @@
   },
   "types": "lib/index.d.ts",
   "dependencies": {
+    "@hoenir/core": "^0.0.1",
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.2",
-    "hoenir-core": "file:../hoenir-core",
     "tslib": "^1.14.1"
+  },
+  "directories": {
+    "test": "test"
   }
 }

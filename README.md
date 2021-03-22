@@ -17,7 +17,7 @@ The command line interface for the Hœnir framework.
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g hoenir-cli
+$ npm install -g @hoenir/cli
 $ hoenir COMMAND
 running command...
 $ hoenir (-v|--version|version)
